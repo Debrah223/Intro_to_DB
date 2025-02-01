@@ -19,7 +19,7 @@ try:
         cursor = connection.cursor()
         
         # Create database if not exists
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DB_NAME}")
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
         print(f"Database '{DB_NAME}' created successfully!")
         
 except Error as e:
