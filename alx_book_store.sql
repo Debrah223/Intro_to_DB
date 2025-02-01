@@ -21,7 +21,7 @@ author_name VARCHAR(215)
 --We create table for Customers
 
 CREATE TABLE Customers(
-customer_id (PRIMARY KEY)
+customer_id INT PRIMARY KEY
 customer_name VARCHAR(215)
 email VARCHAR(215)
 address TEXT    
@@ -38,7 +38,7 @@ order_date DATE
 
 CREATE TABLE Order_Details(
 orderdetailid (PRIMARY KEY)
-order_id (Foreign Key referencing Orders table)
+order_id (INT)
 book_id (Foreign Key referencing Books table)
 quantity DOUBLE    
 );
