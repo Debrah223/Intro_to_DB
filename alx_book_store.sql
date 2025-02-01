@@ -1,5 +1,5 @@
 ---We are going to create a database
-CREATE DATABASE alx_book_store;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 --We shall start by creating a table for books
