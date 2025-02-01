@@ -29,7 +29,7 @@ address TEXT
 
 --Create table for Orders
 CREATE TABLE Orders(
-order_id (PRIMARY KEY)
+order_id INT PRIMARY KEY
 customer_id (Foreign Key referencing Customers table)
 order_date DATE    
 );
