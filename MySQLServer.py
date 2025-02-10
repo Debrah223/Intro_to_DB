@@ -15,12 +15,12 @@ try:
         password=DB_PASSWORD
     )
     
-    if connection.is_connected():
+    if  connection.is_connected():
         cursor = connection.cursor()
         
         # Create database if not exists
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
-        print(f"Database '{DB_NAME}' created successfully!")
+        print(f"Database 'alx_book_store' created successfully!")
         
 except mysql.connector.Error as err:
     print(f"Error connecting to MySQL: {err}")
